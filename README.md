@@ -1,42 +1,33 @@
-# Newsday GitHub Pages mini-saitas
+# Newsweb
 
-Paruoštas statinis puslapis su nuorodomis į `newsday.lt`.
+Paprastas statinis puslapis, publikuojamas per GitHub Pages.
 
-## 1) Sukurk GitHub repozitoriją
+## Kas yra šiame repozitorijoje
 
-Variantas A (rekomenduojamas): sukurk repo pavadinimu:
+- `index.html` – pagrindinis puslapis
+- `README.md` – trumpa dokumentacija
 
-`<tavo-username>.github.io`
+## Paleidimas lokaliai
 
-Tada svetainė bus pasiekiama per:
-
-`https://<tavo-username>.github.io/`
-
-## 2) Įkelk failus
-
-Šio aplanko turinį (`index.html`) įkelk į repozitorijos šaknį.
-
-## 3) Jei keli per git komandų eilutę
+Atidaryk `index.html` naršyklėje arba paleisk paprastą HTTP serverį:
 
 ```bash
-cd /Users/mindaugasbruzas/postmaster/newsday-gh-pages
-git init
-git add .
-git commit -m "Add Newsday links page"
-git branch -M main
-git remote add origin https://github.com/<tavo-username>/<tavo-username>.github.io.git
-git push -u origin main
+python3 -m http.server 8080
 ```
 
-## 4) Patikrink GitHub Pages nustatymą
+Tada atsidaryk `http://localhost:8080`.
 
-GitHub repo:
-- `Settings` -> `Pages`
-- `Source`: `Deploy from a branch`
-- `Branch`: `main` / `(root)`
+## Publikavimas per GitHub Pages
 
-Po 1-5 min. puslapis veiks.
+1. Atidaryk `Settings` -> `Pages`
+2. `Source`: `Deploy from a branch`
+3. `Branch`: `main` ir aplankas `/ (root)`
+4. Išsaugok nustatymus
 
-## Pastaba
+Po kelių minučių puslapis bus pasiekiamas:
 
-HTML nuorodoms specialiai nedėtas `rel="nofollow"`.
+`https://redakcija-cyber.github.io/newsweb/`
+
+## Turinys
+
+Šiame projekte talpinamas redakcinis informacinis turinys. Rekomenduojama skelbti tik teisėtą, originalų ir platformos taisykles atitinkantį turinį.
