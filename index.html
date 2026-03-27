@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Newsday nuorodos</title>
+  <meta name="description" content="Teminių nuorodų puslapis į newsday.lt naujienas ir kategorijas.">
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --text: #0f1b2d;
+      --muted: #4e5d78;
+      --line: #d7dfec;
+      --accent: #1463ff;
+      --accent-2: #0b4ed5;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #eef3fb 0%, #f8fbff 100%);
+    }
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 28px 18px 56px;
+    }
+    .hero {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 26px;
+      box-shadow: 0 8px 24px rgba(20, 58, 132, 0.08);
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: 2rem;
+      line-height: 1.15;
+    }
+    .lead {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .grid {
+      margin-top: 22px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px;
+      box-shadow: 0 4px 14px rgba(20, 58, 132, 0.05);
+    }
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 1rem;
+      letter-spacing: .02em;
+      text-transform: uppercase;
+      color: #27406f;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li + li { margin-top: 8px; }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover {
+      color: var(--accent-2);
+      text-decoration: underline;
+    }
+    .footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: .92rem;
+    }
+    @media (max-width: 720px) {
+      .grid { grid-template-columns: 1fr; }
+      h1 { font-size: 1.65rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <h1>Newsday teminės nuorodos</h1>
+      <p class="lead">
+        Atrinktos nuorodos į pagrindines naujienų kategorijas ir aktualijų srautą.
+      </p>
+      <div class="grid">
+        <article class="card">
+          <h2>Pagrindinės</h2>
+          <ul>
+            <li><a href="https://www.newsday.lt/">Pagrindinis puslapis</a></li>
+            <li><a href="https://www.newsday.lt/aktualijos/">Aktualijos</a></li>
+            <li><a href="https://www.newsday.lt/news/lietuva">Lietuva</a></li>
+            <li><a href="https://www.newsday.lt/news/pasaulis">Pasaulis</a></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Kategorijos</h2>
+          <ul>
+            <li><a href="https://www.newsday.lt/news/politika">Politika</a></li>
+            <li><a href="https://www.newsday.lt/news/verslas-ir-ekonomika">Verslas ir ekonomika</a></li>
+            <li><a href="https://www.newsday.lt/news/technologijos-ir-mokslas">Technologijos ir mokslas</a></li>
+            <li><a href="https://www.newsday.lt/news/sportas">Sportas</a></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Papildomos temos</h2>
+          <ul>
+            <li><a href="https://www.newsday.lt/news/sveikata">Sveikata</a></li>
+            <li><a href="https://www.newsday.lt/news/pramogos-ir-kultura">Pramogos ir kultūra</a></li>
+            <li><a href="https://www.newsday.lt/news/zmones">Žmonės</a></li>
+            <li><a href="https://www.newsday.lt/news/kriminalai">Kriminalai</a></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Naudingi puslapiai</h2>
+          <ul>
+            <li><a href="https://www.newsday.lt/apie-mus/">Apie mus</a></li>
+            <li><a href="https://www.newsday.lt/privatumo-politika/">Privatumo politika</a></li>
+            <li><a href="https://www.newsday.lt/slapukai/">Slapukai</a></li>
+            <li><a href="https://www.newsday.lt/kontaktai/">Kontaktai</a></li>
+          </ul>
+        </article>
+      </div>
+      <p class="footer">Atnaujinta: 2026-03-27</p>
+    </section>
+  </main>
+</body>
+</html>
